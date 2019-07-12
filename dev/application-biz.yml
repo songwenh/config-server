@@ -1,0 +1,9 @@
+server:
+  port: 13333
+spring:
+  application:
+    name: dd-biz
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:11111/eureka/
