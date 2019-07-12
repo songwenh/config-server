@@ -1,13 +1,20 @@
 server:
   port: 13333
+
 spring:
   application:
     name: dd-biz
-#  boot:
-#    admin:
-#      client:
-#        url: http://localhost:14444
+
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:11111/eureka/
+
+management:
+  endpoint:
+    health:
+      show-details: ALWAYS
+  endpoints:
+    web:
+      exposure:
+        include: '*'
