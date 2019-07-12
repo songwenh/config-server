@@ -3,6 +3,11 @@ server:
 spring:
   application:
     name: dd-biz
+  boot:
+    admin:
+      client:
+        url:
+        -  http://localhost:14444
 eureka:
   client:
     serviceUrl:
